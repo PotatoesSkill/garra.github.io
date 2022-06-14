@@ -56,6 +56,35 @@ body{
     max-height: 400px;
 }
 
+.homebut{
+    display: inline-block;
+    position:fixed;
+    background-image: url(../Imagens/Info/1.png);
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: #00000044;
+    background-blend-mode: multiply;
+}
+.homebut:hover{
+    display: inline-block;
+    position:fixed;
+    background-image: url(../Imagens/Info/1.png) ;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-blend-mode: multiply;
+}
+
 main{
     width: 100%;
     margin: auto;
@@ -176,56 +205,104 @@ footer{
 
 
 
-
+.sobre{
+    background-image: url(../Imagens/textura.jpeg);
+    background-size: cover;
+}
 .sobre section{
     overflow: hidden;
-    background-color: #7c85d8;
     color: #ffffff;
     width: 100%;
     min-height: 200px;
     max-height: 200px;
-    
+
+     transition-duration: 0.5s;
+    transition-property: min-height, max-height;
 }
 #luisa{
-    background-color: #f27502;
+    
+    
+    background-color: #f27602;
+    background-image: url(../Imagens/textura.jpeg);
+    background-size: cover;
+    background-blend-mode:hard-light;
+
 }
 #guilherme{
     background-color: #181922;
+    background-image: url(../Imagens/textura.jpeg);
+    background-size: cover;
+    background-blend-mode:hard-light;
 }
 #raul{
     background-color: #f27502;
+    background-image: url(../Imagens/textura.jpeg);
+    background-size: cover;
+    background-blend-mode:hard-light;
 }
 #joao{
     background-color: #181922;
+    background-image: url(../Imagens/textura.jpeg);
+    background-size: cover;
+    background-blend-mode:hard-light;
 }
 #eduardo{
     background-color: #f27502;
+    background-image: url(../Imagens/textura.jpeg);
+    background-size: cover;
+    background-blend-mode:hard-light;
 }
 .sobre section article{
-    width: 25%;
+    width: 15%;
+    margin-right: 14%;
     height: 200px;
     display: inline-block;
+    position: relative;
 }
 .sobre section article img{
     border-radius: 50%;
-    
     position: relative;
-    left: 25%;
-    
-    max-height: 100%;
-    max-width: 100%;
+    top: 10%;
+    left: 50%;
+    max-height: 80%;
+    max-width: 80%;
     
 }
 .sobre section div{
-    margin-top: 25px;
-    width: 74%;
+    margin-top: 2%;
+    width: 70%;
     height: 100%;
     vertical-align:top;
     display: inline-block;
 }
 .sobre section div h1{
-    font-size: 42px;
+    font-size: 36px;
+    font-kerning: auto;
 }
 .sobre section div p{
-    font-size: 32px;
+    font-size: 24px;
+    font-kerning: auto;
+    margin-top: 15px;
+    font-weight: 50;
+}
+.sobre section div .grandesobre{
+    font-size: 0px;
+    font-kerning: auto;
+    font-weight: 50;
+}
+.sobre section:active div .pequenosobre{
+    font-size: 0px;
+}
+.sobre section:active div .grandesobre{
+    font-size: 24px;
+    margin-top: 15px;
+}
+.sobre section:active {
+    overflow: hidden;
+    color: #ffffff;
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    transition-duration: 0.2s;
+    transition-property: min-height, max-height;
 }
