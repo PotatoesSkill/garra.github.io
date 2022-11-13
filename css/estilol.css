@@ -1,210 +1,245 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    position: relative;
-    
-}
+/* -> Geral */
 @font-face {
     font-family: Gotham;
     src: url(/Fontes/GothamMedium.ttf),
     url(/Fontes/GothamBold.ttf) format('bold');
 }
-.menu a{
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #2c2f3900;
-    padding: 5px;
-}
-
-.menu a:hover{
-    color: #ff7b00;
-    text-shadow: 0px 0px 15px #ffffff;
-}
-
-
-body{
-    font-family: Gotham, Arial, Helvetica, sans-serif;
-    background-color: #2c2f39;
-    margin: 0
-}
-
-.menu{
-    background-image: url(../Imagens/Info/Nois.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #f6f9f6;
-    
-    height: fit-content;
-    min-height: 200px;
-    max-height: 400px;
-}
-.menu section{
-    background-color: #181922c0;
-    min-height: 200px;
-    max-height: 400px;
-}
-.menu div{
-    background-image: url(../Imagens/Info/Banner.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    
-    min-height: 200px;
-    max-height: 400px;
-}
-
-.homebut{
-    display: inline-block;
-    position:fixed;
-    background-image: url(../Imagens/Info/1.png);
-    background-size: contain;
-    width: 60px;
-    height: 60px;
-    top: 15px;
-    left: 15px;
-    z-index: 1000;
-    border-radius: 50%;
-    background-color: #00000044;
-    background-blend-mode: multiply;
-}
-.homebut:hover{
-    display: inline-block;
-    position:fixed;
-    background-image: url(../Imagens/Info/1.png) ;
-    background-size: contain;
-    width: 60px;
-    height: 60px;
-    top: 15px;
-    left: 15px;
-    z-index: 1000;
-    border-radius: 50%;
-    background-color: #ffffff;
-    background-blend-mode: multiply;
-}
-
-main{
-    width: 100%;
-    margin: auto;
-}
-.imagebox{
-    overflow: auto;
-    background-color: white;
-}
-.imagebox div{
-    width: calc(100%/3);
-    height: 100%;
+*{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    background-repeat: no-repeat;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+}
+body{
+    max-height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    background-color: #161616;
+    text-align: center;
+    position: relative;
+}
+/* -> Menu Static*/
+#MenuStatic{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 8vw;
+    height: 8vw;
+}
+#MenuStatic a{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+#MenuStatic a img{
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #161616;
+    border-radius: 50%;
+}
+#MenuStatic a img:hover{
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #422106;
+    border-radius: 50%;
+}
+/* -> Header */
+header{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background: url("../Imagens/Info/Nois.jpg");
     background-size: cover;
     background-position: center;
-    float:left;
+    background-repeat: no-repeat;
 }
-
-#imagemenu1{
-    background-image: url(../Imagens/Sobre/Icon/Luisa.jpg);
-}
-#imagemenu2{
-    background-image: url(../Imagens/Sobre/Icon/Gui.jpg);
-}
-#imagemenu3{
-    background-image: url(../Imagens/Sobre/Icon/Jao.jpg);
-}
-.imagebox div a{
-    font-size: 32px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 0;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #2c2f396b;
-    display: block;
-    width: 100%;
+.GarraBanner, .GarraBanner img{
+    position: absolute;
+    left: 0%;
     height: 100%;
-
-    transition: all 0.5s;
-}
-.imagebox div a:hover{
-    font-size: 35px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 0;
-    padding-top: 50%;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #ff8800c4;
-    display: inline-block;
     width: 100%;
-    height: 100%;
-
-    transition: all 0.5s;
+    object-fit: contain;
+    transform: translate(0%, 0);
+    background-color: #161616b4;
+    pointer-events: all;
 }
 
+
+/* -> Footer */
 footer{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 20px;
-    color: #ffffff;
-    background-color: #000000;
-}
-.listfooter p{
+    top: 80%;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background-image: url(../Imagens/textura.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     text-align: center;
     color: #ffffff;
-    background-color: #000000;
 }
-.listfooter ul{
-    padding-top: 2%;
-    padding-right: 1%;
-    padding-bottom: 1%;
+footer section{
+    position: absolute;
+    height: 60%;
+    top: 0px;
+    width: 100%;
+}
+#footerbuttons{
+    width: 100%;
+    right: 0px;
+    margin-top: 2%;
+    top: 0%;
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+}
+#footerbuttons li, #footerbuttons a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0px, 2vw, 3rem);
+    white-space: nowrap;
+
+}
+#footerbuttons a{
+    padding: 5px;
+    border: #161616 2px solid;
+    border-radius: 15px;
+    background-color: #818181;
+}
+#footerbuttons a:hover{
+    padding: 5px;
+    border: #161616 2px solid;
+    border-radius: 15px;
+    background-color: #f27502;
+}
+footer div{
+    position: absolute;
+    height: 40%;
+    bottom: 0px;
+    width: 100%;
+}
+footer div p{
+    display: inline-block;
+    position: absolute;
+    padding: 5px;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, 0);
+    font-size: clamp(0px, 2vw, 1rem);
+    white-space: nowrap;
+}
+#minimenu{
+    width: 50%;
+    right: 0px;
+    margin-right: 5px;
+    top: 0%;
+    position: absolute;
+    white-space: nowrap;
     text-align: right;
 }
-.listfooter #inv{
-    padding-top: 2%;
-    padding-left: 1%;
-    padding-bottom: 1%;
+#minimenu li, #minimenu a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0px, 1.5vw, 1rem);
+    white-space: nowrap;
+}
+
+
+/* -> Página Inicial */
+main{
+    top: 20%;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-image: #161616;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+main section ul{
+    width: 100%;
+    height: 100%;
     text-align: left;
 }
-.listfooter #inv a{
+main section ul li{
+    display: inline-block;
+    position: absolute;
+    width: calc(100%/3);
+    height: 100%;
+    transition: all 0.5s;
+
+    text-transform: uppercase;
     color: #ffffff;
-    text-decoration: none;
-    background-color: #2c2f3900;
-    padding: 5px;
-    border: #ffffff solid 1px;
-    background-color: #2c2f39;
-    font-size: 32px;
 }
-.listfooter #inv a:hover{
-    color: #ffffff;
+.imageli, .imageli img{
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    display: inline;
+    object-fit: cover;
+    object-position: center;
+}
+
+.textli{
+    width: 100%;
+    left: 0px;
+    top: 50%;
+    position: absolute;
+    display: inline;
+
+    text-align: center;
+    color: white;
     text-decoration: none;
-    background-color: #39322c00;
-    padding: 5px;
-    border: #ffffff solid 1px;
-    background-color: #ff7b00;
-    font-size: 32px;
-    text-shadow: 0px 0px 15px #ffffff;
+    font-size: clamp(8px, 20vw, 4vw);
+    text-shadow: #161616 2px 2px 5px;
+    transform: translate(0, -50%);
+
+    pointer-events: none;
+}
+.textli.bg{
+    background-color: #16161660;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    transition: all .5s;
+}
+.textli.bg:hover{
+    background-color: #ff7b0060;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     
 }
-.listfooter ul li{
-    display: inline;
+.menu_li_1{
+    transform: translate(0%, 0);
 }
-.listfooter a{
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #2c2f3900;
-    padding: 5px;
+.menu_li_2{
+    transform: translate(100%, 0);
 }
-
-.listfooter a:hover{
-    color: #ff7b00;
-    text-shadow: 0px 0px 15px #ffffff;
+.menu_li_3{
+    transform: translate(200%, 0);
 }
 
-
-
-
+/* -> Sobre */
 .sobre{
     background-image: url(../Imagens/textura.jpeg);
     background-size: cover;
