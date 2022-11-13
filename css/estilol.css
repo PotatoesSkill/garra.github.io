@@ -91,6 +91,7 @@ footer section{
     height: 60%;
     top: 0px;
     width: 100%;
+    background-color: #161616b4;
 }
 #footerbuttons{
     width: 100%;
@@ -114,19 +115,20 @@ footer section{
     padding: 5px;
     border: #161616 2px solid;
     border-radius: 15px;
-    background-color: #818181;
+    background-color: #8181815b;
 }
 #footerbuttons a:hover{
     padding: 5px;
     border: #161616 2px solid;
     border-radius: 15px;
-    background-color: #f27502;
+    background-color: #f27602;
 }
 footer div{
     position: absolute;
     height: 40%;
     bottom: 0px;
     width: 100%;
+    background-color: #161616b4;
 }
 footer div p{
     display: inline-block;
